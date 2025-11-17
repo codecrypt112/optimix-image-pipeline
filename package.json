@@ -2,6 +2,9 @@
   "name": "@optimix/image-pipeline",
   "version": "2.0.0",
   "description": "Modern image optimization pipeline with WebP, AVIF, responsive sizes, and CDN integration",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -41,7 +44,7 @@
     "react",
     "typescript"
   ],
-  "author": "",
+  "author": "codecrypt112",
   "license": "MIT",
   "dependencies": {
     "sharp": "^0.33.0",
@@ -73,10 +76,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/optimix-image-pipeline"
+    "url": "https://github.com/codecrypt112/optimix-image-pipeline.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/optimix-image-pipeline/issues"
+    "url": "https://github.com/codecrypt112/optimix-image-pipeline/issues"
   },
-  "homepage": "https://github.com/yourusername/optimix-image-pipeline#readme"
+  "homepage": "https://github.com/codecrypt112/optimix-image-pipeline#readme"
 }
