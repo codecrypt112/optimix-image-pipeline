@@ -1,0 +1,82 @@
+{
+  "name": "@optimix/image-pipeline",
+  "version": "2.0.0",
+  "description": "Modern image optimization pipeline with WebP, AVIF, responsive sizes, and CDN integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "optimix": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "test": "node examples/quick-start.js",
+    "test:v2": "npm run build && node test/test-v2.js",
+    "example:v2": "npm run build && node examples/v2-features.js"
+  },
+  "keywords": [
+    "image",
+    "optimization",
+    "optimizer",
+    "webp",
+    "avif",
+    "responsive",
+    "cdn",
+    "compression",
+    "svg",
+    "pipeline",
+    "sharp",
+    "batch",
+    "resize",
+    "convert",
+    "nextjs",
+    "react",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.33.0",
+    "svgo": "^3.0.2",
+    "glob": "^10.3.10",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/sharp": "^0.32.0",
+    "typescript": "^5.3.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/optimix-image-pipeline"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/optimix-image-pipeline/issues"
+  },
+  "homepage": "https://github.com/yourusername/optimix-image-pipeline#readme"
+}

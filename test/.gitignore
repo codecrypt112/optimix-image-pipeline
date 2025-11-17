@@ -1,0 +1,10 @@
+# Ignore test outputs
+output/
+
+# Ignore test images (except example)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+!test-image.jpg
